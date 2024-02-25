@@ -1,0 +1,642 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  height: 10000px;
+ 
+
+}
+
+
+/* ................Top nav */
+.page{
+  transition: 0.5s linear;
+
+}
+#sidenavv {
+  position: fixed;
+  height: 100%;
+  width: 0px;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  transition: 0.5s ease-in;
+  
+}
+
+.closebtn{
+  position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 4dvb;
+}
+
+
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0F0F0;
+  width: 100%;
+  height: 40px;
+  font-size: 0.9rem;
+  padding: 0 32px;
+  
+}
+
+.top-nav img{
+  width: 120px;
+}
+.top-nav h3{
+   display: flex;
+   gap: 20px;
+}
+/* Top nav info */
+
+
+.top-nav-info{
+padding: 0 28px;
+margin-top: 20px ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.top-mid-nav-info{
+  border: 2px solid #FED700;
+  border-radius: 40px;
+}
+.top-mid-nav-info input{
+  width: 400px;
+  height: 34px;
+border-radius: 40px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+.top-mid-nav-info .search-icon{
+  width: 40px;
+  height: 34px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #FED700;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.top-left-nav-info button{
+border: none;
+outline:none;
+padding: 10px 28px;
+background-color: black;
+border-radius: 40px;
+color: white;
+font-size: 14px;
+font-weight: 700;
+}
+
+
+
+.top-right-nav-info button {
+  border: none;
+  outline: none;
+  padding: 10px 28px;
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.menu-icon{
+  border: none;
+  font-size: 20px;
+  background: transparent;
+  display: none;
+}
+.shopping-icon{
+  border: none;
+  font-size: 20px;
+  background: transparent;
+  display: none;
+}
+
+
+/* New arrival */
+.new-arrival{
+  background-color: #FED700;
+  height: 34px;
+  margin-top: 20px;
+  padding: 6px 32px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+/* New arrival Card */
+.new-arrival-card {
+  padding: 0 32px;
+margin-top: 10px;
+
+}
+.new-arrival-card-wrapper{
+  display: flex;
+  gap: 8px;
+}
+.card{
+  text-align: center;
+width: 180px;
+  border: 3px solid #FED700;
+  display: flex;
+  flex-direction: column;
+}
+.card img{
+  width: 90%;
+
+  margin: 0 auto;
+  
+}
+.card h4,p {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 8px;
+}
+
+.card button{
+  border: none;
+  outline: none;
+  background-color: #FED700;
+  width: 60%;
+  border-radius: 40px;
+  padding: 6px 10px;
+  margin: 4px auto;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  
+  
+}
+
+.card button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+/* Catogory */
+
+
+.catogory{
+  height: 34px;
+  background-color: #FED700;
+  margin-top: 10px;
+
+  display: flex;
+  gap: 122px;
+  padding: 6px 32px;
+}
+.catogory h1{
+  font-size: 1.4rem;
+}
+
+.catogory h2{
+font-size: 1.4rem;
+color: gray;
+}
+
+/*-------------- section 6 */
+
+
+#container{
+ display: flex;
+  
+}
+#sidenav{
+position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+height: 100px;
+
+ 
+ 
+}
+
+#sidenav h1 {
+  font-size: 1.2rem;
+  padding:  4px;
+margin-top: 10px;  
+}
+
+
+#sidenav ul {
+  margin-top: 10px;
+}
+#sidenav ul li{
+padding: 3px 0;
+}
+#sidenav ul li a{
+  padding: 4px;
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+
+.line{
+  border-bottom: 3px solid #FED700;
+  width: 200px;
+  margin-left: 5px;
+}
+#section{
+  margin-top: 10px;
+}
+#section .new-arrival-card-wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+ 
+}
+#body-kits h1 {
+  color: black;
+  padding-left:  32px;
+  margin-bottom: -4px;
+
+  font-size: 1.2rem;
+
+}
+
+
+
+
+
+/* Model page Pop */
+#model {
+  height: 100%;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#model-body {
+  width: 350px;
+  background-color: white;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#model-body button {
+  border: none;
+  font-size: 24px;
+  background: inherit;
+  cursor: pointer;
+}
+
+#model-body button span {
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+  #section .new-arrival-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+
+  }
+}
+
+@media (max-width: 980px) {
+  #section .new-arrival-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+  }
+
+  #sidenav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+
+  }
+
+  .catogory {
+
+    gap: 68px;
+
+  }
+
+  .line {
+    border-bottom: 3px solid #FED700;
+    width: 180px;
+    margin-left: 5px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  #sidenav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 100px;
+
+  }
+
+  .line {
+    border-bottom: 3px solid #FED700;
+    width: 140px;
+    margin-left: 5px;
+  }
+
+  .new-arrival-card {
+    padding: 0 8px;
+    margin-top: 10px;
+
+  }
+
+  #section {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  #body-kits h1 {
+    color: black;
+    padding-left: 8px;
+  }
+
+  .catogory {
+
+    gap: 70px;
+    padding: 6px 0px;
+  }
+
+  .catogory h1 {
+    font-size: 1.2rem;
+    padding-left: 6px;
+  }
+
+  .catogory h2 {
+    font-size: 1.2rem;
+    color: gray;
+
+  }
+}
+
+
+@media (max-width: 480px) {
+  #section .new-arrival-card-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+  
+    }
+  
+    #sidenav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 100px;
+  
+    }
+  
+    .card {
+      text-align: center;
+      width: 150px;
+      border: 3px solid #FED700;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .line {
+      border-bottom: 3px solid #FED700;
+      width: 80px;
+      margin-left: 5px;
+    }
+  
+    #sidenav h1 {
+      font-size: 0.8rem;
+      padding: 4px;
+      margin-top: 10px;
+    }
+  
+    .catogory {
+  
+      gap: 134px;
+      padding: 10px 0px;
+    }
+  
+    .catogory h1 {
+      font-size: 0.8rem;
+  
+    }
+  
+    .catogory h2 {
+      font-size: 0.8rem;
+      color: gray;
+  
+    }
+  
+    .top-nav {
+  
+      font-size: 0.7rem;
+      padding: 0 20px;
+    }
+  
+    .top-nav img {
+      width: 100px;
+    }
+  
+    .top-nav h3 {
+  
+      gap: 10px;
+    }
+  
+    .top-mid-nav-info input {
+      width: 200px;
+      height: 34px;
+      border-radius: 40px;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+    }
+  
+    .top-mid-nav-info .search-icon {
+      width: 42px;
+  
+    }
+  
+    .top-left-nav-info button {
+      display: none;
+    }
+  
+  
+  
+    .top-right-nav-info button {
+      display: none;
+    }
+        #body-kits h1 {
+          color: black;
+        
+        }
+        .menu-icon{
+          display: block;
+        }
+        .shopping-icon{
+          display: block;
+        }
+  }
+    @media (max-width: 420px) {
+    
+      
+  
+      .card {
+        text-align: center;
+        width: 140px;
+        border: 3px solid #FED700;
+        display: flex;
+        flex-direction: column;
+      }
+  
+
+  
+      .menu-icon {
+        display: block;
+      }
+  
+      .shopping-icon {
+        display: block;
+      }
+            .card button {
+              width: 70%;
+            }
+    }
+
+                                @media (max-width: 395px) {
+            
+                
+                
+                                  .card {
+                                    text-align: center;
+                                    width: 130px;
+                                    border: 3px solid #FED700;
+                                    display: flex;
+                                    flex-direction: column;
+                                  }
+                
+                                }
+                
+                                @media (max-width: 376px) {
+                
+                
+                
+                                  .card {
+                                    text-align: center;
+                                    width: 120px;
+                                    border: 3px solid #FED700;
+                                    display: flex;
+                                    flex-direction: column;
+                                  }
+                
+                
+                
+                                  .menu-icon {
+                                    display: block;
+                                  }
+                
+                                  .shopping-icon {
+                                    display: block;
+                                  }
+                
+                                  .card button {
+                                    width: 80%;
+                                  }
+                                }
+                
+                                @media (max-width: 326px) {
+                
+                
+                
+                                  .card {
+                                    text-align: center;
+                                    width: 200px;
+                                    border: 3px solid #FED700;
+                                    display: flex;
+                                    flex-direction: column;
+                                  }
+                
+                
+                
+                                  .menu-icon {
+                                    display: block;
+                                  }
+                
+                                  .shopping-icon {
+                                    display: block;
+                                  }
+                
+                                  .card button {
+                                    width: 80%;
+                                  }
+                
+                                  #section .new-arrival-card-wrapper {
+                                    display: grid;
+                                    grid-template-columns: 1fr;
+                
+                
+                                  }
+                
+                                  .top-mid-nav-info input {
+                                    width: 130px;
+                                    height: 34px;
+                                    border-radius: 40px;
+                                    border: none;
+                                    outline: none;
+                                    padding-left: 20px;
+                                  }
+                
+                                  .top-mid-nav-info .search-icon {
+                                    width: 34px;
+                                    height: 34px;
+                                    text-align: center;
+                                    border: none;
+                                    outline: none;
+                                    background-color: #FED700;
+                                    border-top-right-radius: 40px;
+                                    border-bottom-right-radius: 40px;
+                                  }
+                                }
